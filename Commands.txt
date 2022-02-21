@@ -1,0 +1,22 @@
+sudo apt install net-tools
+ifconfig
+ip address 
+ip link
+sudo apt install inetutils-traceroute 
+sudo apt install traceroute 
+traceroute google.com
+tracepath google.com
+mkdir (akes a new directory)
+rmdir (removes the directory)
+sudo apt install git
+git --version
+git --help
+git config --global user.name "Your name"
+git config --global user.email "your email"
+git config --list 
+git init 
+git init main
+git add README.md
+git commit -m "First commit"
+git push origin <branch-name>
+
