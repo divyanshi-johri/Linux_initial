@@ -14,7 +14,9 @@ git --help
 git config --global user.name "Your name"
 git config --global user.email "your email"
 git config --list 
-git init 
+
+echo "# Ubantu" >> README.md
+git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
