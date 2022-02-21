@@ -18,5 +18,6 @@ git init
 git init main
 git add README.md
 git commit -m "First commit"
+git remote add origin (destination of repo)
 git push origin <branch-name>
 
