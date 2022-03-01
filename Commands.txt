@@ -1,3 +1,4 @@
+//Networking
 sudo apt install net-tools
 ifconfig
 ip address 
@@ -6,15 +7,18 @@ sudo apt install inetutils-traceroute
 sudo apt install traceroute 
 traceroute google.com
 tracepath google.com
+
+//File management
 mkdir (akes a new directory)
 rmdir (removes the directory)
+
+//GIT
 sudo apt install git
 git --version
 git --help
 git config --global user.name "Your name"
 git config --global user.email "your email"
 git config --list 
-
 echo "# Ubantu" >> README.md
 git init
 git add README.md
@@ -22,4 +26,29 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/divyanshi-johri/Ubantu.git
 git push -u origin main
+ 
+//MYSQL installaion
+sudo apt update
+sudo apt upgrade
+sudo apt install mysql-server
+sudo apt install mysql-server
+***Securing MySQL
+sudo mysql_secure_installation
+***Check if MySQL Service Is Running
+sudo systemctl status mysql
+***Log into MYSQL
+sudo mysql -u root
 
+//NodeJs
+sudo apt -y update && sudo apt -y upgrade
+curl -sL https://deb.nodesource.com/setup_17.x | sudo bash -
+sudo apt-get install -y nodejs
+node -v
+***Developement Tools
+sudo apt-get install gcc g++ make
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg
+sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" 
+sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update 
+sudo apt-get install yarn
